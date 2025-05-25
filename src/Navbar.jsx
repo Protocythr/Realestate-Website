@@ -1,15 +1,15 @@
 import { MenuBtn } from "./MenuBtn"
-import { NavbarElement } from "./NavbarElement"
+import { LinkedElement } from "./LinkedElement"
 
-export function Navbar(){
+export function Navbar({toggleOverlay}){
     return (
         <div className="nb">
             <ul className="linkList">
-                <NavbarElement txtColor={"white"} txt={"PROPERTIES"} link={"./placeholder"}/>
-                <NavbarElement txtColor={"white"} txt={"888 - 888 - 8888"} link={"./placeholder"}/>
-                <NavbarElement txtColor={"white"} txt={"ABOUT"} link={"./placeholder"}/>
+                <LinkedElement txtColor={"white"} txt={"PROPERTIES"} link={"./placeholder"}/>
+                <LinkedElement txtColor={"white"} txt={"888 - 888 - 8888"} link={"./placeholder"}/>
+                <LinkedElement txtColor={"white"} txt={"ABOUT"} link={"./placeholder"}/>
             </ul>
-            <MenuBtn/>
+            <MenuBtn toggleOverlay={toggleOverlay}/>
         </div>
     )
 }
