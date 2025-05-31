@@ -1,4 +1,5 @@
 import { Iconbar } from "./Iconbar"
+import "./Footer.css"
 
 export function Footer(){
     return (
@@ -40,6 +41,7 @@ export function Footer(){
                 alignItems: 'flex-start',
                 listStyle: 'none',
                 margin: 0,
+                width: '50%',
             }}>
                 <li>
                     <a>Address</a>
@@ -54,7 +56,7 @@ export function Footer(){
                     <a>Boston, MA 02111</a>
                 </li>
             </ul>
-            <ul>
+            <ul className="wmc_logo">
                 <li>
                     <img src="./assets/placeholder.svg" alt="./assets/placeholder.svg"/>
                 </li>

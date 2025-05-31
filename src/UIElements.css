@@ -37,39 +37,87 @@
     align-items: center;
 }
 
-.nb .linkList {
-    margin-left: auto;
-    list-style: none;
-    display: flex;
-    padding: 0;
-    /* centers horizontally */
-    align-items: center;
-    height: 80%;
-    /* centers vertically (optional) */
-    /* or whatever height you want */
-    background-color: #333;
-    color: white;
-    padding-right: 4%;
-}
-
-.nb .linkList li{
+.nb .linkList li {
     width: fit-content;
+    white-space: nowrap;
     height: 80%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
     text-align: center;
     align-content: center;
     background-color: red;
     box-sizing: border-box;
 }
 
-.nb .linkList li a{
+.nb .linkList li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 100%;
     font-family: 'Montserrat';
 }
 
-.hamburger-react{
+.nb .linkList {
+    flex-grow: 1;
+    /* Let it grow inside .nb */
+    flex-shrink: 0;
+    /* Don't let it shrink smaller than needed */
+    flex-basis: 0;
+    /* Initial size */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Or center, as desired */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 3% 0 auto;
+    /* Right aligned */
+    background-color: #333;
+    height: 80%;
+    white-space: nowrap;
+    /* Still prevents text wrap */
+}
+
+.hamburger-react {
+    margin-left: auto;
+    margin-right: 20px;
+    /* Optional spacing from the edge */
+    display: flex;
+    align-items: center;
+}
+
+.nb .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    /* remove or increase fixed width if any */
+    width: auto;
+    /* or a fixed width bigger than combined logos */
+    min-width: max-content;
+    /* prevents container shrinking below content */
+    height: 7vh;
+    list-style: none;
+}
+
+.logos .wmc_logo {
+    flex-shrink: 0;
+    /* prevent shrinking */
+    min-width: 70px;
+    /* lock width */
+    min-height: 70px;
+    /* lock height */
+    object-fit: contain;
+    /* maintain aspect ratio */
+    margin: 0;
+}
+
+.logos .wr_logo {
     margin-left: 10px;
-    margin-right: 10px;
+    /* keep original size or apply similar locking styles if needed */
+}
+
+@media screen and (max-width: 800px) {
+    .nb .linkList {
+        display: none;
+    }
 }

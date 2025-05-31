@@ -6,7 +6,7 @@ export function Frontpage() {
       <a
         style={{
           display: 'block',
-          backgroundColor: 'red',
+          backgroundColor: '#8b0000',
           height: '100vh',
           width: '100%',
           textDecoration: 'none',
@@ -18,7 +18,7 @@ export function Frontpage() {
       <a
         style={{
           display: 'block',
-          backgroundColor: 'blue',
+          backgroundColor: '#49759C',
           height: '100vh',
           width: '100%',
           textDecoration: 'none',
