@@ -20,10 +20,11 @@
 }
 
 .overlay-content {
-    background: white;
-    color: black;
-    margin-right: 23vw;
+    background-color: blue;
+    margin-right: 48vw;
     margin-top: 20vh;
+    width: 3px;
+    height: 800px;
 }
 
 .overlay-content ul {
@@ -39,6 +40,18 @@
     font-size: 50px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -48,24 +61,46 @@
     margin: 0;
 }
 
-.menu-item.one {
-    margin-bottom: 20px;
-    margin-left: -50px;
+.menu-item {
+    opacity: 0;
 }
 
-.menu-item.two {
+/* Staggered animation triggers */
+.menu.visible .menu-item.one {
+    animation: fadeIn 0.15s ease forwards;
+    animation-delay: 0.2s;
+    margin-bottom: 20px;
+    margin-left: -90px;
+}
+
+.menu.visible .menu-item.two {
+    animation: fadeIn 0.15s ease forwards;
+    animation-delay: 0.3s;
     margin-bottom: 20px;
     margin-left: -20px;
 }
 
-.menu-item.three {
+.menu.visible .menu-item.three {
+    animation: fadeIn 0.15s ease forwards;
+    animation-delay: 0.4s;
     margin-bottom: 20px;
     margin-left: 30px;
 }
 
-.menu-item.four {
-    margin-left: -30px; }
+.menu.visible .menu-item.four {
+    animation: fadeIn 0.15s ease forwards;
+    animation-delay: 0.5s;
+    margin-left: -30px;
+}
 
-.menu-item a{
+.menu-item a {
     text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu-item a:hover {
+    color: gray;
+    padding-left: 30px;
 }

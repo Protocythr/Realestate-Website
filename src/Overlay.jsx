@@ -4,7 +4,7 @@ export function Overlay({ visible }) {
     return (
       <div className={`overlay ${visible ? 'visible' : ''}`} >
         <div className="overlay-content">
-          <Menu/>
+          <Menu visible={visible}/>
         </div>
       </div>
     );

@@ -3,6 +3,7 @@ import { Frontpage } from "./Frontpage"
 import { Navbar } from "./Navbar"
 import { useState } from "react"
 import { Overlay } from "./Overlay"
+import './Frontpage.css'
 import './Overlay.css'
 import './ContentStyles.css'
 import './UIElements.css'

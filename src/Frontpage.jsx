@@ -1,8 +1,9 @@
+import { Footer } from "./Footer";
+
 export function Frontpage() {
   return (
-    <>
+    <div className="ftpg">
       <a
-        href="#"
         style={{
           display: 'block',
           backgroundColor: 'red',
@@ -15,7 +16,6 @@ export function Frontpage() {
         placeholder1
       </a>
       <a
-        href="#"
         style={{
           display: 'block',
           backgroundColor: 'blue',
@@ -27,6 +27,8 @@ export function Frontpage() {
       >
         placeholder2
       </a>
-    </>
+
+      <Footer/>
+    </div>
   );
 }
