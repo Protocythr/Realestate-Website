@@ -12,6 +12,15 @@
     position: fixed;
     bottom: 16px;
     left: 20px;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cntbtn.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .nb {
@@ -25,6 +34,7 @@
     width: 100%;
     /* guarantees full viewport width */
     height: 7vh;
+    min-height: 100px;
     /* optional: 10% of screen height */
     background-color: black;
     padding: 0;
@@ -35,6 +45,15 @@
     /* ensures it stays on top if needed */
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease, top 0.3s ease;
+}
+
+.nb.transparent {
+    background-color: transparent;
+}
+
+.nb.movedUp {
+    top: calc(-1 * max(8vh, 100px));
 }
 
 .nb .linkList li {
@@ -102,9 +121,8 @@
 .logos .wmc_logo {
     flex-shrink: 0;
     /* prevent shrinking */
-    min-width: 70px;
     /* lock width */
-    min-height: 70px;
+    min-height: 6%;
     /* lock height */
     object-fit: contain;
     /* maintain aspect ratio */
