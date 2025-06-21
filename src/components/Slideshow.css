@@ -1,0 +1,17 @@
+.slideshow {
+    width: 100%;
+    height: 100%;
+    /* desired visible height */
+    overflow: hidden;
+    /* crop vertical overflow */
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    /* fill the container width */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }

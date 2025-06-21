@@ -24,10 +24,13 @@ export function Footer(){
                     <a>Winner Mcdonald</a>
                 </li>
                 <li>
-                    <a>888.888.8888</a>
+                    <a>Call or Text</a>
                 </li>
                 <li>
-                    <a>placeholder@gmail.com</a>
+                    <a>617.875.2868</a>
+                </li>
+                <li>
+                    <a>Winner.McDonald@raveis.com</a>
                 </li>
             </ul>
             <ul style={{
@@ -44,16 +47,16 @@ export function Footer(){
                 width: '50%',
             }}>
                 <li>
-                    <a>Address</a>
+                    <a>Milton Office</a>
                 </li>
                 <li>
                     <a> </a>
                 </li>
                 <li>
-                    <a>300 Somewhere Dr, Apt 5</a>
+                    <a>95 Eliot Street,</a>
                 </li>
                 <li>
-                    <a>Boston, MA 02111</a>
+                    <a>Milton, MA 02186</a>
                 </li>
             </ul>
             <ul className="wmc_logo">

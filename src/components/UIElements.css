@@ -46,10 +46,10 @@
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease, top 0.3s ease;
-}
+} 
 
 .nb.transparent {
-    background-color: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .nb.movedUp {
@@ -64,14 +64,24 @@
     padding-right: 4%;
     text-align: center;
     align-content: center;
-    background-color: red;
+    background-color: transparent;
     box-sizing: border-box;
 }
 
 .nb .linkList li a {
     text-decoration: none;
-    font-size: 100%;
+    color: white;
+    background: transparent;
+    font-size: 20px;
     font-family: 'Montserrat';
+    transition: color 0.3s ease;
+}
+
+.nb .linkList li a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: rgb(66, 165, 245);
 }
 
 .nb .linkList {
@@ -90,7 +100,7 @@
     padding: 0;
     margin: 0 3% 0 auto;
     /* Right aligned */
-    background-color: #333;
+    background-color: transparent;
     height: 80%;
     white-space: nowrap;
     /* Still prevents text wrap */
@@ -130,11 +140,15 @@
 }
 
 .logos .wr_logo {
+    padding: 10px;
     margin-left: 10px;
+    border-radius: 0%;
+    height: 40px;
+    background: transparent;
     /* keep original size or apply similar locking styles if needed */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .nb .linkList {
         display: none;
     }

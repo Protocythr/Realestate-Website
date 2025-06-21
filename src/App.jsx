@@ -1,12 +1,12 @@
-import { ConnectButton } from "./ConnectButton"
-import { Frontpage } from "./Frontpage"
-import { Navbar } from "./Navbar"
+import { ConnectButton } from "./components/ConnectButton"
+import { Frontpage } from "./components/Frontpage"
+import { Navbar } from "./components/Navbar"
 import { useState } from "react"
-import { Overlay } from "./Overlay"
-import './Frontpage.css'
-import './Overlay.css'
-import './ContentStyles.css'
-import './UIElements.css'
+import { Overlay } from "./components/Overlay"
+import './components/Frontpage.css'
+import './components/Overlay.css'
+import './components/ContentStyles.css'
+import './components/UIElements.css'
 
 function App() {
 

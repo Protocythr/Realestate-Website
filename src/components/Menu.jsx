@@ -4,7 +4,7 @@ export function Menu({ visible }) {
     return (
       <ul className={`menu ${visible ? 'visible' : ''}`}>
         <li className="menu-item one">
-          <MenuItem txtColor="white" txt="PROPERTIES" link="./placeholder" />
+          <MenuItem txtColor="white" txt="PROPERTIES" link="./properties.html" />
         </li>
         <li className="menu-item two">
           <MenuItem txtColor="white" txt="ABOUT" link="./placeholder" />
