@@ -13,22 +13,26 @@ const images = [
     "/assets/slides/slide9.jpeg"
 ]
 
-export function Slideshow(){
+export function Slideshow() {
     const [index, setIndex] = useState(0);
-
-    const nextSlide = () => { (index + 1) % images.length }
-    const prevSlide = () => setIndex((index - 1 + images.length) % images.length);
-
+  
     useEffect(() => {
-        const interval = setInterval(() => {
-            setIndex(prev => (prev + 1) % images.length)
-        }, 4000);
-        return () => clearInterval(interval);
+      const interval = setInterval(() => {
+        setIndex(prev => (prev + 1) % images.length);
+      }, 4000);
+      return () => clearInterval(interval);
     }, []);
-
+  
     return (
-        <div className="slideshow">
-            <img src={images[index]} alt={`Slide ${index}`} className="slide-img"/>
-        </div>
-    )
-}
+      <div className="slideshow">
+        {images.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt={`Slide ${i}`}
+            className={`slide ${i === index ? "slide-transition" : ""}`}
+          />
+        ))}
+      </div>
+    );
+} 

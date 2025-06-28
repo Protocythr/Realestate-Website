@@ -1,11 +1,290 @@
-.ftpg{
+/* Frontpage.css */
+.ftpg {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
-.photobio {
-    
+.ftpg .profile-container {
+    position: relative;
+    margin-top: 80px;
+    z-index: 10;
 }
 
-.bio {
-    width: 300px;
-    float: right;
+.ftpg .contact-header {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+.ftpg .headshot {
+    width: 450px;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.ftpg .headshotPicture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ftpg .contact-details {
+    height: 100%;
+    margin-left: 150px;
+    flex: 1;
+}
+
+.ftpg .contact-details h1 {
+    font-size: 2.5rem;
+    color: #1a3a6c;
+    margin: 0 0 5px -5px;
+}
+
+.ftpg .contact-details h2 {
+    font-size: 1.5rem;
+    color: #4a6fa5;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.ftpg .description {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.ftpg .contact-info {
+    font-size: 1rem;
+    color: #666;
+    margin: 8px 0;
+}
+
+.ftpg .contact-label {
+    font-weight: 600;
+    color: #444;
+    margin-right: 5px;
+}
+
+/* REMOVED GRID LAYOUT - REPLACED WITH CONTINUOUS CONTENT */
+.ftpg .content-section {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+/* REMOVED CARD STYLING - MADE CONTINUOUS */
+.ftpg .content-section > div {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6eef9;
+}
+
+.ftpg .content-section > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ftpg .content-section h2 {
+    color: #1a3a6c;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e6eef9;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.ftpg .content {
+    padding-top: 30px;
+    line-height: 1.7;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.ftpg .achievement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ftpg .achievement-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.ftpg .achievement-list li:before {
+    content: "•";
+    color: #1a3a6c;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.ftpg .year {
+    font-weight: 700;
+    color: #1a3a6c;
+}
+
+.ftpg .area-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.ftpg .area-tags span {
+    background: #e6eef9;
+    color: #1a3a6c;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ftpg .area-tag {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a3a6c;
+    font-size: 1.2rem;
+}
+
+.ftpg .additional-coverage {
+    font-style: italic;
+    color: #4a6fa5;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.ftpg .benefit {
+    margin-bottom: 30px;
+}
+
+.ftpg .benefit h3 {
+    color: #1a3a6c;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.ftpg .benefit ul {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.ftpg .benefit li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.ftpg .listing-placeholder {
+    background: #f8fafd;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #4a6fa5;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.ftpg .team-section {
+    /* Removed grid-column property */
+}
+
+.ftpg .team-cards {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.ftpg .team-card {
+    flex: 1;
+    min-width: 300px;
+    background: #f8fafd;
+    border-radius: 8px;
+    padding: 25px;
+    border-left: 4px solid #1a3a6c;
+}
+
+.ftpg .role {
+    color: #4a6fa5;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.ftpg .credential {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.ftpg .contact {
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.ftpg .email-btn {
+    background: #1a3a6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.ftpg .email-btn:hover {
+    background: #0f2752;
+}
+
+@media (max-width: 768px) {
+    .ftpg .contact-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .ftpg .contact-details {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .ftpg .headshot {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .ftpg .content-section {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+
+    .ftpg .content-section > div {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ftpg .team-cards {
+        gap: 20px;
+    }
 }

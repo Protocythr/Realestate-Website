@@ -1,17 +1,22 @@
 .slideshow {
-    width: 100%;
-    height: 100%;
-    /* desired visible height */
-    overflow: hidden;
-    /* crop vertical overflow */
     position: relative;
+    width: 100%;
+    height: 100vh;
+    /* or however tall you want */
+    overflow: hidden;
 }
 
 .slideshow img {
-    width: 100%;
-    /* fill the container width */
-    height: auto;
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%); }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+
+.slideshow .slide-transition {
+    opacity: 1;
+    z-index: 2;
+}

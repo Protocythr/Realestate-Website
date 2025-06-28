@@ -10,7 +10,6 @@ export function Footer(){
                 flexDirection: 'column',
                 gap: '10px',
                 padding: '10px',
-                backgroundColor: 'red',
                 justifyContent: 'flex-start',
                 alignItems: 'flex-start',
                 listStyle: 'none',
@@ -39,7 +38,6 @@ export function Footer(){
                 flexDirection: 'column',
                 gap: '10px',
                 padding: '10px',
-                backgroundColor: 'blue',
                 justifyContent: 'flex-start',
                 alignItems: 'flex-start',
                 listStyle: 'none',
@@ -64,6 +62,20 @@ export function Footer(){
                     <img src="./assets/placeholder.svg" alt="./assets/placeholder.svg"/>
                 </li>
             </ul>
+            <div>
+                <p>©2025 William Raveis Real Estate. Equal Housing Opportunity.</p>
+                <ul>
+                    <li>ADA Compliant</li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <h3>Download Our App</h3>
+                        <a href="#">App Store</a>
+                        <a href="#">Google Play</a>
+                    </li>
+                </ul>
+            </div>
             <Iconbar/>
         </div>
     )
