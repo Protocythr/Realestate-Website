@@ -131,6 +131,7 @@
 }
 
 .logos .wmc_logo {
+    height: 40px;
     flex-shrink: 0;
     /* prevent shrinking */
     /* lock width */

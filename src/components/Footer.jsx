@@ -1,82 +1,69 @@
-import { Iconbar } from "./Iconbar"
-import "./Footer.css"
+import { Iconbar } from "./Iconbar";
+import "./Footer.css";
 
-export function Footer(){
-    return (
-        <div className="ftr">
-            <ul style={{
-                float: 'left',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px',
-                padding: '10px',
-                justifyContent: 'flex-start',
-                alignItems: 'flex-start',
-                listStyle: 'none',
-                margin: 0,
-                width: '50%',
-            }}>
-                <li>
-                    <a>Contact Us</a>
-                </li>
-                <li>
-                    <a>Winner Mcdonald</a>
-                </li>
-                <li>
-                    <a>Call or Text</a>
-                </li>
-                <li>
-                    <a>617.875.2868</a>
-                </li>
-                <li>
-                    <a>Winner.McDonald@raveis.com</a>
-                </li>
-            </ul>
-            <ul style={{
-                float: 'left',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px',
-                padding: '10px',
-                justifyContent: 'flex-start',
-                alignItems: 'flex-start',
-                listStyle: 'none',
-                margin: 0,
-                width: '50%',
-            }}>
-                <li>
-                    <a>Milton Office</a>
-                </li>
-                <li>
-                    <a> </a>
-                </li>
-                <li>
-                    <a>95 Eliot Street,</a>
-                </li>
-                <li>
-                    <a>Milton, MA 02186</a>
-                </li>
-            </ul>
-            <ul className="wmc_logo">
-                <li>
-                    <img src="./assets/placeholder.svg" alt="./assets/placeholder.svg"/>
-                </li>
-            </ul>
-            <div>
-                <p>©2025 William Raveis Real Estate. Equal Housing Opportunity.</p>
-                <ul>
-                    <li>ADA Compliant</li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <h3>Download Our App</h3>
-                        <a href="#">App Store</a>
-                        <a href="#">Google Play</a>
-                    </li>
-                </ul>
-            </div>
-            <Iconbar/>
+export function Footer() {
+  return (
+    <>
+    <footer className="ftr">
+      <div className="footer-top">
+        <div className="footer-column">
+          <h3 className="footer-heading">Contact Us</h3>
+          <ul className="footer-list">
+            <li className="footer-name">Winner McDonald</li>
+            <li className="footer-contact">
+              <span>Call or Text:</span> 617.875.2868
+            </li>
+            <li className="footer-contact">
+              <span>Email:</span> Winner.McDonald@raveis.com
+            </li>
+          </ul>
         </div>
-    )
+        
+        <div className="footer-column">
+          <h3 className="footer-heading">Office Location</h3>
+          <ul className="footer-list">
+            <li className="office-name">Milton Office</li>
+            <li>95 Eliot Street</li>
+            <li>Milton, MA 02186</li>
+          </ul>
+        </div>
+        
+        <div className="footer-column logo-column">
+          <div className="logo-container">
+            <img 
+              src="./assets/wm-logo.svg" 
+              alt="Winner McDonald Real Estate" 
+              className="footer-logo"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div className="footer-bottom">
+        <p className="copyright">©2025 William Raveis Real Estate. Equal Housing Opportunity.</p>
+        
+        <div className="footer-links">
+          <ul className="footer-link-list">
+            <li><a href="#" className="footer-link">ADA Compliant</a></li>
+            <li><a href="#" className="footer-link">Privacy Policy</a></li>
+            <li><a href="#" className="footer-link">Agent Login</a></li>
+          </ul>
+          
+          <div className="app-download">
+            <h4 className="app-title">Download Our App</h4>
+            <div className="app-buttons">
+              <a href="#" className="app-btn">
+                <img src="./assets/app-store.svg" alt="App Store" />
+              </a>
+              <a href="#" className="app-btn">
+                <img src="./assets/google-play.svg" alt="Google Play" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+      <Iconbar />
+    </>
+  );
 }
